@@ -1,0 +1,14 @@
+// day
+SELECT COUNT(*) FROM sms_outbox WHERE DATE_FORMAT(CreatedDate,'%Y-%m-%d') = CURDATE()
+
+// yesterday
+SELECT COUNT(*) FROM sms_outbox WHERE DATE_FORMAT(CreatedDate,'%Y-%m-%d') = DATE_ADD(CURDATE(), INTERVAL -1 DAY)
+
+// dayweek
+SELECT COUNT(*) FROM sms_outbox WHERE SendFlag = '1' AND 
+CreatedDate >= CURDATE() - INTERVAL DAYOFWEEK(CURDATE())+6 DAY AND 
+CreatedDate < CURDATE() - INTERVAL DAYOFWEEK(CURDATE())-1 DAY LIMIT 1
+
+// month
+SELECT COUNT(*) FROM sms_outbox WHERE SendFlag = '1' AND 
+DATE_FORMAT(CreatedDate, '%Y-%m') = DATE_FORMAT(CURDATE(),'%Y-%m')
