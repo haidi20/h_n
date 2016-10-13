@@ -1,0 +1,993 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
+void masuk ();
+void note ();
+
+main ()
+{
+	masuk ();
+	return (0);
+}
+
+void masuk ()
+{
+
+
+	
+	int nmr, angk, hasil, sisi, panjang, lebar, AB, BC, AC, a, t, CD, AD, d1, d2 ;
+	char jwb;
+	
+	mulai:
+
+	cout << "     |                                                                 |";
+	cout << "\n     |                                                                 |";
+	cout << "\n     *                                                                 *";
+	cout << "\n     |=================================================================|";
+	cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+	cout << "\n     | 			        --=> by : h_n <=--                     |";	
+	cout << "\n     |=================================================================|";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n";
+	cout << "\n    ---------------------";
+	cout << "\n====| MENU BANGUN DATAR |";
+	cout << "\n    ---------------------";
+	cout << "\n";
+	cout << "\n *   1. Persegi";
+	cout << "\n *   2. Persegi Panjang";
+	cout << "\n *   3. Segitiga";
+	cout << "\n *   4. Jajar genjang";
+	cout << "\n *   5. Trapesium";
+	cout << "\n *   6. Layang-layang";
+	cout << "\n *   7. Belah ketupat";
+	cout << "\n *   8. CATATAN PANDUAN ";
+	cout << "\n";
+	cout << "\nMasukan pilihan anda  : ";
+	cin  >> nmr; 
+	
+	system ("cls");
+	
+	if (nmr == 1) 
+	{						 // pilihan angka 1 Persegi /
+	
+		persegi:
+			
+		cout << "     |                                                                 |";
+	    cout << "\n     |                                                                 |";
+	    cout << "\n     *                                                                 *";
+		cout << "\n     |=================================================================|";
+		cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+		cout << "\n     | 			        --=> by : h_n <=--                     |";	
+		cout << "\n     |=================================================================|";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n";
+		cout << "---------------------";
+		cout << "\n|      PERSEGI      |";
+		cout << "\n---------------------";
+		cout << "\n";
+		cout << "\nmenu bangun persegi :";
+		cout << "\n";
+		cout << "\n1. Luas Persegi";
+		cout << "\n2. Keliling Persegi";
+		cout << "\n3. Kembali";
+		cout << "\n";
+		cout << "\nMasukan pilian anda : ";
+		cin >> angk;
+		
+		system ("cls");
+		
+		if (angk==1)	 	  // pilihan angka 1 pada persegi //
+		{ 
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "---------------------";
+		    cout << "\n|		    |";
+		    cout << "\n|      PERSEGI	    |";
+		    cout << "\n|		    |";
+		    cout << "\n---------------------";
+		    cout << "\n";
+		    cout << "\n1. luas persegi :";
+		    cout << "\n";
+			cout << "\nmasukan nilai sisi : ";
+			cin >> sisi ;
+			hasil = sisi*sisi ;
+			cout << "maka hasilnya adalah : " << hasil ;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus luas persegi = ( S x S ) atau S pangkat 2.";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==2)		// pilihan angka 2 pada persegi //
+		{
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "---------------------";
+		    cout << "\n|		    |";
+		    cout << "\n|      PERSEGI	    |";
+		    cout << "\n|		    |";
+		    cout << "\n---------------------";
+		    cout << "\n";
+		    cout << "\n1. Keliling persegi:";
+		    cout << "\n";
+			cout << "\nmasukan nilai sisi : ";
+			cin >> sisi ;
+			hasil = 4*sisi ;
+			cout << "maka hasilnya adalah : " << hasil;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus keliling persegi = ( 4 x S )";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==3)		// pilihan angka 3 pada persegi //
+		{
+			goto mulai;			
+		}
+			
+		else
+		{
+			
+			cout << "\n";
+			cout << "\nmaaf, yang anda ketik tidak ada di menu :) ";
+			cout << "\napakah anda ingin mencoba kembali ? ";
+			cout << "\n(y/n) : "; 
+			cin >> jwb ;
+			
+			system ("cls");	
+			
+			if (jwb=='y')
+			{
+				goto persegi;
+			}
+			
+			else
+			{
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";
+			}	
+			
+		
+		}
+		
+		system ("cls");
+		
+		switch (jwb)
+		{
+			case 'y':
+				goto persegi;
+			case 'n':
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";	
+		}
+	}
+	
+	if (nmr == 2) 		 // pilihan angka 2 Persegi Panjang //
+	{
+	
+		persegi_panjang :
+			
+		cout << "     |                                                                 |";
+	    cout << "\n     |                                                                 |";
+	    cout << "\n     *                                                                 *";
+		cout << "\n     |=================================================================|";
+		cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+		cout << "\n     | 			        --=> by : h_n <=--                     |";	
+		cout << "\n     |=================================================================|";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n-----------------------------";
+		cout << "\n|      PERSEGI PANJANG      |";
+		cout << "\n-----------------------------";
+		cout << "\n";
+		cout << "\nmenu :";
+		cout << "\n";
+		cout << "\n1. Luas Persegi Panjang";
+		cout << "\n2. Keliling Persegi Panjang";
+		cout << "\n3. Kembali";
+		cout << "\n";
+		cout << "\nMasukan pilian anda : ";
+		cin >> angk;
+		
+		system ("cls");
+		
+		if (angk==1)	 	  // pilihan angka 1 pada persegi //
+		{ 
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n-------------------------";
+		    cout << "\n|		        |";
+		    cout << "\n|    PERSEGI PANJANG    |";
+		    cout << "\n|		        |";
+		    cout << "\n-------------------------";
+		    cout << "\n";
+		    cout << "\n1. luas persegi panjang ";
+		    cout << "\n";
+			cout << "\nmasukan nilai Panjang : ";
+			cin >> panjang ;
+			cout << "masukan nilai Lebar   : ";
+			cin >> lebar ;
+			hasil = panjang*lebar ;
+			cout << "\nmaka hasilnya adalah  : " << hasil ;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus luas persegi panjang = ( P x L ).";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==2)		// pilihan angka 2 pada persegi panjang //
+		{
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n-------------------------";
+		    cout << "\n|		        |";
+		    cout << "\n|    PERSEGI PANJANG    |";
+		    cout << "\n|		        |";
+		    cout << "\n-------------------------";
+		    cout << "\n";
+		    cout << "\n1. Keliling persegi panjang :";
+		    cout << "\n";
+			cout << "\nmasukan nilai Panjang : ";
+			cin >> panjang ;
+			cout << "masukan nilai Lebar   : ";
+			cin >> lebar ;
+			hasil = 2*(panjang+lebar) ;
+			cout << "\nmaka hasilnya adalah  : " << hasil;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus keliling persegi = 2 x ( P + L )";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==3)		// pilihan angka 3 pada persegi panjang //
+		{
+			goto mulai;			
+		}
+			
+		else
+		{
+			
+			cout << "\n";
+			cout << "\nmaaf, yang anda ketik tidak ada di menu :) ";
+			cout << "\napakah anda ingin mencoba kembali ? ";
+			cout << "\n(y/n) : "; 
+			cin >> jwb ;
+			
+			system ("cls");	
+			
+			if (jwb=='y')
+			{
+				goto persegi_panjang;
+			}
+			
+			else
+			{
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";
+			}	
+			
+		
+		}
+		
+		system ("cls");
+		
+		switch (jwb)
+		{
+			case 'y':
+				goto persegi_panjang;
+			case 'n':
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";	
+		}
+
+	}		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	if (nmr == 3) 		 // pilihan angka 3 Segitiga //
+	{
+		segitiga:
+			
+		cout << "     |                                                                 |";
+	    cout << "\n     |                                                                 |";
+	    cout << "\n     *                                                                 *";
+		cout << "\n     |=================================================================|";
+		cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+		cout << "\n     | 			        --=> by : h_n <=--                     |";	
+		cout << "\n     |=================================================================|";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n----------------------";
+		cout << "\n|      SEGITIGA      |";
+		cout << "\n----------------------";
+		cout << "\n";
+		cout << "\nmenu :";
+		cout << "\n";
+		cout << "\n1. Luas Segitiga";
+		cout << "\n2. Keliling Segitiga";
+		cout << "\n3. Kembali";
+		cout << "\n";
+		cout << "\nMasukan pilian anda : ";
+		cin >> angk;
+		
+		system ("cls");
+		
+		if (angk==1)	 	  // pilihan angka 1 pada segitiga //
+		{ 
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n------------------";
+		    cout << "\n|		 |";
+		    cout << "\n|    SEGITIGA    |";
+		    cout << "\n|		 |";
+		    cout << "\n------------------";
+		    cout << "\n";
+		    cout << "\n1. luas segitiga ";
+		    cout << "\n";
+			cout << "\nmasukan nilai alas   : ";
+			cin >> a ;
+			cout << "masukan nilai tinggi : ";
+			cin >> t ;
+			hasil = 0.5 * a*t;
+			cout << "\nmaka hasilnya adalah  : " << hasil ;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus luas segitiga = 1/2 (alas x tinggi) .";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==2)		// pilihan angka 2 pada segitiga //
+		{
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n";
+		   	cout << "\n------------------";
+		    cout << "\n|		 |";
+		    cout << "\n|    SEGITIGA    |";
+		    cout << "\n|		 |";
+		    cout << "\n------------------";
+		    cout << "\n";
+		    cout << "\n1. Keliling persegi panjang :";
+		    cout << "\n";
+			cout << "\nmasukan nilai sisi AB : ";
+			cin >> AB ;
+			cout << "masukan nilai sisi BC : ";
+			cin >> BC ;
+			cout << "masukan nilai sisi CD : ";
+			cin >> AC ;
+			hasil = AB + BC + AC ;
+			cout << "\nmaka hasilnya adalah  : "<< hasil;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus keliling persegi = AB + BC + AC ";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==3)		// pilihan angka 3 pada persegi //
+		{
+			goto mulai;			
+		}
+			
+		else
+		{
+			
+			cout << "\n";
+			cout << "\nmaaf, yang anda ketik tidak ada di menu :) ";
+			cout << "\napakah anda ingin mencoba kembali ? ";
+			cout << "\n(y/n) : "; 
+			cin >> jwb ;
+			
+			system ("cls");	
+			
+			if (jwb=='y')
+			{
+				goto segitiga;
+			}
+			
+			else
+			{
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";
+			}	
+			
+		
+		}
+		
+		system ("cls");
+		
+		switch (jwb)
+		{
+			case 'y':
+				goto segitiga;
+			case 'n':
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";	
+		}
+	}
+	
+	if (nmr == 4) 		 // pilihan angka 4 Jajar Genjang //
+	{
+		jajar_genjang:			 // pilihan angka 4 jajar genjang //
+			
+		cout << "     |                                                                 |";
+	    cout << "\n     |                                                                 |";
+	    cout << "\n     *                                                                 *";
+		cout << "\n     |=================================================================|";
+		cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+		cout << "\n     | 			        --=> by : h_n <=--                     |";	
+		cout << "\n     |=================================================================|";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n---------------------------";
+		cout << "\n|      JAJAR GENJANG      |";
+		cout << "\n---------------------------";
+		cout << "\n";
+		cout << "\nmenu :";
+		cout << "\n";
+		cout << "\n1. Luas jajar genjang";
+		cout << "\n2. Keliling jajar genjang";
+		cout << "\n3. Kembali";
+		cout << "\n";
+		cout << "\nMasukan pilian anda : ";
+		cin >> angk;
+		
+		system ("cls");
+		
+		if (angk==1)	 	  // pilihan angka 1 pada jajar genjang //
+		{ 
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n-------------------------";
+		    cout << "\n|		        |";
+		    cout << "\n|    JAJAR GENJANG     |";
+		    cout << "\n|		        |";
+		    cout << "\n-------------------------";
+		    cout << "\n";
+		    cout << "\n1. Luas Jajar genjang ";
+		    cout << "\n";
+			cout << "\nmasukan nilai alas   : ";
+			cin >> a ;
+			cout << "masukan nilai tinggi : ";
+			cin >> t ;
+			hasil = a * t;
+			cout << "\nmaka hasilnya adalah  : " << hasil ;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus luas jajar genjang = alas x tinggi .";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==2)		// pilihan angka 2 pada jajar genjang //
+		{
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n-------------------------";
+		    cout << "\n|		        |";
+		    cout << "\n|    JAJAR GENJANG      |";
+		    cout << "\n|		        |";
+		    cout << "\n-------------------------";
+		    cout << "\n";
+		    cout << "\n1. Keliling jajar genjang :";
+		    cout << "\n";
+			cout << "\nmasukan nilai sisi AB : ";
+			cin >> AB ;
+			cout << "masukan nilai sisi BC : ";
+			cin >> BC ;
+			cout << "masukan nilai sisi CD : ";
+			cin >> CD ;
+			cout << "masukan nilai sisi AD : ";
+			cin >> AD ;
+			hasil = AB + BC + CD + AD ;
+			cout << "\nmaka hasilnya adalah  : "<< hasil;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus keliling jajar genjang = AB + BC + CD + AD ";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==3)		// pilihan angka 3 pada pada jajar genjang //
+		{
+			goto mulai;			
+		}
+			
+		else
+		{
+			
+			cout << "\n";
+			cout << "\nmaaf, yang anda ketik tidak ada di menu :) ";
+			cout << "\napakah anda ingin mencoba kembali ? ";
+			cout << "\n(y/n) : "; 
+			cin >> jwb ;
+			
+			system ("cls");	
+			
+			if (jwb=='y')
+			{
+				goto jajar_genjang;
+			}
+			
+			else
+			{
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";
+			}	
+			
+		
+		}
+		
+		system ("cls");
+		
+		switch (jwb)
+		{
+			case 'y':
+				goto jajar_genjang;
+			case 'n':
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";	
+		}
+	}
+	
+	if (nmr == 5) 		 // pilihan angka 5 Trapesium //
+	{
+		trapesium :
+			
+		cout << "     |                                                                 |";
+	    cout << "\n     |                                                                 |";
+	    cout << "\n     *                                                                 *";
+		cout << "\n     |=================================================================|";
+		cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+		cout << "\n     | 			        --=> by : h_n <=--                     |";	
+		cout << "\n     |=================================================================|";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n-----------------------";
+		cout << "\n|      TRAPESIUM      |";
+		cout << "\n-----------------------";
+		cout << "\n";
+		cout << "\nmenu :";
+		cout << "\n";
+		cout << "\n1. Luas trapesium";
+		cout << "\n2. Keliling trapesium";
+		cout << "\n3. Kembali";
+		cout << "\n";
+		cout << "\nMasukan pilian anda : ";
+		cin >> angk;
+		
+		system ("cls");
+		
+		if (angk==1)	 	  // pilihan angka 1 pada trapesium //
+		{ 
+			cout << "     |                                                                 |";
+	    	cout << "\n     |                                                                 |";
+	    	cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n-------------------";
+		    cout << "\n|		  |";
+		    cout << "\n|    TRAPESIUM    |";
+		    cout << "\n|		  |";
+		    cout << "\n-------------------";
+		    cout << "\n";
+		    cout << "\n1. Luas Trapesium ";
+		    cout << "\n";
+			cout << "\nmasukan nilai sisi sejajar   : ";
+			cin >> sisi ;
+			cout << "masukan nilai tinggi         : ";
+			cin >> t ;
+			hasil = 0.5 * sisi * t;
+			cout << "\nmaka hasilnya adalah  : " << hasil ;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus luas trapesium = 1/2 (sisi sejajar * tinggi) .";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==2)		// pilihan angka 2 pada trapesium //
+		{
+			cout << "     |                                                                 |";
+	    	cout << "\n     |                                                                 |";
+	    	cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n-------------------";
+		    cout << "\n|		  |";
+		    cout << "\n|    TRAPESIUM    |";
+		    cout << "\n|		  |";
+		    cout << "\n-------------------";
+		    cout << "\n";
+		    cout << "\n2. Keliling trapesium :";
+		    cout << "\n";
+			cout << "\nmasukan nilai sisi AB   : ";
+			cin >> AB ;
+			cout << "masukan nilai sisi BC   : ";
+			cin >> BC ;
+			cout << "masukan nilai sisi CD   : ";
+			cin >> CD ;
+			cout << "masukan nilai sisi AD   : ";
+			cin >> AD ;
+			hasil = AB + BC + CD + AD ;
+			cout << "\nmaka hasilnya adalah  : "<< hasil;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus keliling trapesium = AB + BC + CD + AD ";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==3)		// pilihan angka 3 pada trapesium //
+		{
+			goto mulai;			
+		}
+			
+		else
+		{
+			
+			cout << "\n";
+			cout << "\nmaaf, yang anda ketik tidak ada di menu :) ";
+			cout << "\napakah anda ingin mencoba kembali ? ";
+			cout << "\n(y/n) : "; 
+			cin >> jwb ;
+			
+			system ("cls");	
+			
+			if (jwb=='y')
+			{
+				goto trapesium;
+			}
+			
+			else
+			{
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";
+			}	
+			
+		
+		}
+		
+		system ("cls");
+		
+		switch (jwb)
+		{
+			case 'y':
+				goto trapesium;
+			case 'n':
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";	
+		}
+	}
+
+	if (nmr == 6) 		 // pilihan angka 6 Layang - layang //
+	{
+		layang_layang:			 // pilihan angka 5 layang - layang //
+			
+		cout << "     |                                                                 |";
+	    cout << "\n     |                                                                 |";
+	    cout << "\n     *                                                                 *";
+		cout << "\n     |=================================================================|";
+		cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+		cout << "\n     | 			        --=> by : h_n <=--                     |";	
+		cout << "\n     |=================================================================|";
+		cout << "\n";
+		cout << "\n";
+		cout << "\n----------------------------";
+		cout << "\n|     LAYANG - LAYANG      |";
+		cout << "\n----------------------------";
+		cout << "\n";
+		cout << "\nmenu :";
+		cout << "\n";
+		cout << "\n1. Luas layang - layang";
+		cout << "\n2. Keliling layang - layang";
+		cout << "\n3. Kembali";
+		cout << "\n";
+		cout << "\nMasukan pilian anda : ";
+		cin >> angk;
+		
+		system ("cls");
+		
+		if (angk==1)	 	  // pilihan angka 1 layang - layang //
+		{ 
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n------------------------";
+		    cout << "\n|		       |";
+		    cout << "\n|    LAYANG - LAYANG   |";
+		    cout << "\n|		       |";
+		    cout << "\n------------------------";
+		    cout << "\n";
+		    cout << "\n1. Luas layang - layang ";
+		    cout << "\n";
+			cout << "\nmasukan nilai diagonal 1   : ";
+			cin >> d1  ;
+			cout << "masukan nilai diagonal 2   : ";
+			cin >> d2 ;
+			hasil = 0.5 * d1 * d2;
+			cout << "\nmaka hasilnya adalah  : " << hasil ;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus luas layang - layang = 1/2 (diagonal 1 * diagonal 2) .";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==2)		// pilihan angka 2 pada layang - layang //
+		{
+			cout << "     |                                                                 |";
+			cout << "\n     |                                                                 |";
+			cout << "\n     *                                                                 *";
+			cout << "\n     |=================================================================|";
+			cout << "\n     | ------- =>> PROGRAM PENGHITUNG RUMUS BANGUN DATAR <<= --------- |";
+			cout << "\n     | 			        --=> by : h_n <=--                     |";	
+			cout << "\n     |=================================================================|";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n";
+		    cout << "\n------------------------";
+		    cout << "\n|		       |";
+		    cout << "\n|    LAYANG - LAYANG   |";
+		    cout << "\n|		       |";
+		    cout << "\n------------------------";
+		    cout << "\n";
+		    cout << "\n1. Keliling layang - layang :";
+		    cout << "\n";
+			cout << "\nmasukan nilai sisi AB   : ";
+			cin >> AB ;
+			cout << "masukan nilai sisi BC   : ";
+			cin >> BC ;
+			hasil = AB + BC ;
+			cout << "\nmaka hasilnya adalah  : "<< hasil;
+			cout << "\n";
+			cout << "\n";
+			cout << "rumus keliling layang - layang = AB + BC ";
+			cout << "\n";
+			cout << "\nmau mencoba kembali ?";
+			cout << "\n(y/n) : ";
+			cin >> jwb;
+		}
+		
+		else if (angk==3)		// pilihan angka 3 pada layang - layang //
+		{
+			goto mulai;			
+		}
+			
+		else
+		{
+			
+			cout << "\n";
+			cout << "\nmaaf, yang anda ketik tidak ada di menu :) ";
+			cout << "\napakah anda ingin mencoba kembali ? ";
+			cout << "\n(y/n) : "; 
+			cin >> jwb ;
+			
+			system ("cls");	
+			
+			if (jwb=='y')
+			{
+				goto layang_layang;
+			}
+			
+			else
+			{
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";
+			}	
+			
+		
+		}
+		
+		system ("cls");
+		
+		switch (jwb)
+		{
+			case 'y':
+				goto layang_layang;
+			case 'n':
+				cout << "\n";
+				cout << "terima kasih atas perhatiannya :) ";	
+		}
+	}
+	
+	if (nmr == 7) 		 // pilihan angka 7 Belah Ketupat //
+	{
+		cout << "\n";
+		cout << "masih coming soon.. harap di tunggu yah ^.^";
+		cout << "\napakah anda mau kembali ke menu ? (y/n) "; cin >> jwb;
+		
+		system ("cls");
+		
+		if (jwb=='y')
+		goto mulai;
+		else
+		cout << "sekian terima kasih ;) ";
+	}
+
+	if (nmr == 8) 		 // pilihan angka 8 CATATAN UNTUK PENGGUNA //
+	{
+		cout << "\n";
+		cout << "                       [CATATAN PANDUAN]       ";
+		cout << "\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^";
+		cout << "\n";
+		cout << "\n1. pilih sesuai keinginan anda dengan ketik nomor yang ";
+		cout << "\n   sudah tertera dimenu.";
+		cout << "\n   contoh  : anda ingin mencari jawaban rumus persegi";
+		cout << "\n             dan di menu persegi berada di nomor 1 "	;
+		cout << "\n	     maka anda mengetik angka 1 (note : hanya angka saja).";
+		cout << "\n";
+		cout << "\n2. apabila mendapatkan menu pilihan seperti ini (y/n)" ;
+		cout << "\n   artinya y = yes & n = no ( INGAT harus huruf kecil jangan huruf besar) ";
+		cout << "\n   (note   : jangan ketik y atau n double (ganda) atau lebih";
+		cout << "\n             karena akan mengalami EROR";
+		cout << "\n   contoh  : yy, yyy, nn, & nnn. ";
+		cout << "\n";
+		   
+		cout << "\n3. ketik huruf atau angka yang sesuai pada menu di program.";
+		cout << "\n";
+		cout << "\n4. apabila mengalami kesalahan lebih dari 1 kali";
+		cout << "\n   program otomatis langsung keluar.";
+		cout << "\n";
+		cout << "\n5. apabila ada kesalahan atau kerusakan pada program ini";
+		cout << "\n   yang tidak tertera di CATATAN PANDUAN ";
+		cout << "\n   bisa hubungi developer (pembuat program) yang bersangkutan ";
+		cout << "\n";
+		cout << "\n * sekian terima kasih atas perhatiannya :) ";
+		cout << "\n-----------------------------------------------------------------";
+		cout << "\n";
+		cout << "\n apakah anda ingin kembali ke menu ? (y/n) : "; cin >> jwb;
+		
+		system ("cls");
+		
+		if (jwb=='y')
+			goto mulai;
+		else
+			cout << "terima kasih :)";  	
+	}
+
+
+
+	else					 // bila ada kesalahan //
+	{
+
+		cout << "\n";
+		cout << "\nmaaf, yang anda ketik tidak ada di menu :) ";
+		cout << "\napakah anda ingin mencoba kembali ? ";
+		cout << "\n(y/n) : "; 
+		cin >> jwb ;
+		
+		system ("cls");
+		
+		if (jwb=='y')
+		{
+			goto mulai;
+		}
+		
+		else if (jwb=='n')
+		{
+		cout << "\n";
+		cout << "terima kasih atas perhatiannya ;) ";
+		}
+		
+		else 
+		{
+		cout << "\n";
+		cout << "terima kasih atas perhatiannya ;) ";
+		}
+		
+	}
+
+}
